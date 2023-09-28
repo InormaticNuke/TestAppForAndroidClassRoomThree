@@ -55,6 +55,18 @@
 
     </LinearLayout>
 
+    <ListView
+
+        android:id="@+id/listOne"
+        android:layout_width="367dp"
+        android:layout_height="385dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ListView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
