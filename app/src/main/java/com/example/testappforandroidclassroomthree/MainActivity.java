@@ -12,7 +12,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText edtnOne, edtnTwo;
+    EditText edtnOne, edtTwo;
     Spinner spnspinnerOne;
     ListView lstlistOne;
     List<String> results;
@@ -23,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        edtnOne = findViewById(R.id.nOne);
-        edtnTwo = findViewById(R.id.nTwo);
+        edtnOne = findViewById(R.id.edtnOne);
+        edtnTwo = findViewById(R.id.edtnTwo);
+        spnspinnerOne = findViewById(R.id.spinnerOne);
+        lstlistOne = findViewById(R.id.listOne);
+
+        String[] operations = {"Add", "Subtract", "Multiply", "Divide"};
+        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,operations);
+        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spnspinnerOne.setAdapter(spinnerAdapter);
+
     }
 }
