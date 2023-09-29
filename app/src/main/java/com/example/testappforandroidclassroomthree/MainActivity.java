@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         edtnOne = findViewById(R.id.edtnOne);
-        edtnTwo = findViewById(R.id.edtnTwo);
+        edtTwo = findViewById(R.id.edtTwo);
         spnspinnerOne = findViewById(R.id.spinnerOne);
         lstlistOne = findViewById(R.id.listOne);
 
